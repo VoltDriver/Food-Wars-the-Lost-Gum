@@ -1,0 +1,860 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9189223699964131959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 931e0570ec758c54aa98d8b3e688fb01, type: 3}
+  m_Name: PrepareAttackBossNode
+  m_EditorClassIdentifier: 
+  m_displayName: 
+  m_state: 0
+  m_started: 0
+  m_guid: 17eecb4b178d11f47b759b4c83da5255
+  m_position: {x: 1725.0067, y: 930.4}
+  animToPlay: 3
+  totalTime: 0.5
+  m_prepareAttackSounds:
+  - {fileID: 940324320793270788, guid: adb0463334751fd4783bb17086f853c7, type: 3}
+--- !u!114 &-7517212161367890396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4ba68aeaeecda4a8294b76898ea4a9, type: 3}
+  m_Name: SwipeBossNode
+  m_EditorClassIdentifier: 
+  m_displayName: 
+  m_state: 0
+  m_started: 0
+  m_guid: e6f735c43dcfe864ea1ac0072c994f59
+  m_position: {x: 1725.0067, y: 853.5999}
+  leftSwipe: 1
+  totalTime: 2
+  vineSpawnZValue: -0.5
+  vineSpawnYValue: 0
+  m_swipeAttackSound: {fileID: 940324320793270788, guid: 39400c95e83841448a59676f369d88c0, type: 3}
+  m_angerSounds:
+  - {fileID: 940324320793270788, guid: 99febc0eae8d4bc4990d988ec61608c5, type: 3}
+  - {fileID: 940324320793270788, guid: 05a37e72ff84e36478c0ddd6f99d7a42, type: 3}
+  - {fileID: 940324320793270788, guid: e2592d2576a9c2e4d9f0489433bb6c0e, type: 3}
+--- !u!114 &-6442882337610306364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4ba68aeaeecda4a8294b76898ea4a9, type: 3}
+  m_Name: SwipeBossNode
+  m_EditorClassIdentifier: 
+  m_displayName: 
+  m_state: 0
+  m_started: 0
+  m_guid: 8238a80f3f5850241b8815741833caab
+  m_position: {x: 1725.0067, y: 700.7999}
+  leftSwipe: 0
+  totalTime: 2
+  vineSpawnZValue: -0.5
+  vineSpawnYValue: 0
+  m_swipeAttackSound: {fileID: 940324320793270788, guid: 39400c95e83841448a59676f369d88c0, type: 3}
+  m_angerSounds:
+  - {fileID: 940324320793270788, guid: 99febc0eae8d4bc4990d988ec61608c5, type: 3}
+  - {fileID: 940324320793270788, guid: 05a37e72ff84e36478c0ddd6f99d7a42, type: 3}
+  - {fileID: 940324320793270788, guid: e2592d2576a9c2e4d9f0489433bb6c0e, type: 3}
+--- !u!114 &-5995230721565963310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50ada561eaeb7e84b81f5ff2dea25078, type: 3}
+  m_Name: SelectorNode
+  m_EditorClassIdentifier: 
+  m_displayName: 
+  m_state: 0
+  m_started: 0
+  m_guid: 5e971853d5b357142b566a8f8a3b0284
+  m_position: {x: 840.19135, y: 968.7999}
+  m_children:
+  - {fileID: 6300778645350447371}
+  - {fileID: -1601073158824409596}
+--- !u!114 &-5884262097668633345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2230072626ee7814abcdb7f16b18ab4f, type: 3}
+  m_Name: ChargeAttackPrepareBossNode
+  m_EditorClassIdentifier: 
+  m_displayName: 
+  m_state: 0
+  m_started: 0
+  m_guid: b702b9ba63156314f96f3a21ce289ac5
+  m_position: {x: 1305.3499, y: 930.3998}
+  totalTime: 4
+  damageToStopCharge: 50
+  m_chargingSound: {fileID: 940324320793270788, guid: 4a6da238b6bfe7544ac7f99809351580, type: 3}
+--- !u!114 &-5749840288628361982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 931e0570ec758c54aa98d8b3e688fb01, type: 3}
+  m_Name: PrepareAttackBossNode
+  m_EditorClassIdentifier: 
+  m_displayName: 
+  m_state: 0
+  m_started: 0
+  m_guid: 7d1542c4a989ac141a8bd3d5004dc8fd
+  m_position: {x: 1725.0067, y: 623.1999}
+  animToPlay: 3
+  totalTime: 1
+  m_prepareAttackSounds:
+  - {fileID: 940324320793270788, guid: adb0463334751fd4783bb17086f853c7, type: 3}
+--- !u!114 &-5457180018901079429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7850e6051d052e4e844fc37fcb272f1, type: 3}
+  m_Name: CenterAttackBossNode
+  m_EditorClassIdentifier: 
+  m_displayName: 
+  m_state: 0
+  m_started: 0
+  m_guid: 0efca060df30d4e449d5622071196975
+  m_position: {x: 1072, y: 281.60004}
+  totalTime: 3
+  rootSpawnZValue: -0.5
+  rootSpawnYValue: 0
+  m_attackSound: {fileID: 940324320793270788, guid: e58c17d57815b6246a5cc65900a3e8f7, type: 3}
+  m_angerSounds:
+  - {fileID: 940324320793270788, guid: 99febc0eae8d4bc4990d988ec61608c5, type: 3}
+  - {fileID: 940324320793270788, guid: 05a37e72ff84e36478c0ddd6f99d7a42, type: 3}
+  - {fileID: 940324320793270788, guid: e2592d2576a9c2e4d9f0489433bb6c0e, type: 3}
+--- !u!114 &-5367350674276284892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4ba68aeaeecda4a8294b76898ea4a9, type: 3}
+  m_Name: SwipeBossNode
+  m_EditorClassIdentifier: 
+  m_displayName: 
+  m_state: 0
+  m_started: 0
+  m_guid: e8ded3ee56f045a489932408165058c1
+  m_position: {x: 1724.2067, y: 552}
+  leftSwipe: 1
+  totalTime: 1.5
+  vineSpawnZValue: -0.5
+  vineSpawnYValue: 0
+  m_swipeAttackSound: {fileID: 940324320793270788, guid: 39400c95e83841448a59676f369d88c0, type: 3}
+  m_angerSounds:
+  - {fileID: 940324320793270788, guid: 99febc0eae8d4bc4990d988ec61608c5, type: 3}
+  - {fileID: 940324320793270788, guid: 05a37e72ff84e36478c0ddd6f99d7a42, type: 3}
+  - {fileID: 940324320793270788, guid: e2592d2576a9c2e4d9f0489433bb6c0e, type: 3}
+--- !u!114 &-3783917739448522651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 931e0570ec758c54aa98d8b3e688fb01, type: 3}
+  m_Name: PrepareAttackBossNode
+  m_EditorClassIdentifier: 
+  m_displayName: 
+  m_state: 0
+  m_started: 0
+  m_guid: d08ca2792d61b8241aeb96abfda62462
+  m_position: {x: 73.599976, y: 15.720001}
+  animToPlay: 0
+  totalTime: 2
+  m_prepareAttackSounds:
+  - {fileID: 940324320793270788, guid: 3ec8324ee3f34994198f32842cf55b53, type: 3}
+  - {fileID: 940324320793270788, guid: eeb2914fd1f607a49892571e97773745, type: 3}
+  - {fileID: 940324320793270788, guid: 6ce79fe7747087e46be201cf30fe0f37, type: 3}
+  - {fileID: 940324320793270788, guid: 3b3d53089161c8245b665c08ff8338ce, type: 3}
+  - {fileID: 940324320793270788, guid: e5d6c221c12fa9041893d32f3aab8316, type: 3}
+  - {fileID: 940324320793270788, guid: 10338590a46c0dc41a5cbbc196f11d39, type: 3}
+  - {fileID: 940324320793270788, guid: 99d8c30a4981a4a40bf2a19801057373, type: 3}
+--- !u!114 &-2658921512539438600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07b4a77ddefc51a45aaedf511aa92e7a, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  m_displayName: 
+  m_state: 0
+  m_started: 0
+  m_guid: d3261f196cfa4d447a9351083103f496
+  m_position: {x: 859.2001, y: 243.20007}
+  m_children:
+  - {fileID: 426938910365825378}
+  - {fileID: -5457180018901079429}
+--- !u!114 &-1863070522112135170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07b4a77ddefc51a45aaedf511aa92e7a, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  m_displayName: 
+  m_state: 0
+  m_started: 0
+  m_guid: 49b9f7e7c5a30d14688930fcf27374ee
+  m_position: {x: 1111.9999, y: 661.6001}
+  m_children:
+  - {fileID: -5749840288628361982}
+  - {fileID: -6442882337610306364}
+  - {fileID: 3435601786545318360}
+  - {fileID: -7517212161367890396}
+  - {fileID: -9189223699964131959}
+  - {fileID: -249663778777661533}
+--- !u!114 &-1632732558011948639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75b3239d0e8f5cf4d89271fc4361f569, type: 3}
+  m_Name: LaughBossNode
+  m_EditorClassIdentifier: 
+  m_displayName: 
+  m_state: 0
+  m_started: 0
+  m_guid: 20ffb3d87fb9d9643a1a4454926dc5ca
+  m_position: {x: 1111.9999, y: 513.59985}
+  totalTime: 2
+  m_laughSounds:
+  - {fileID: 940324320793270788, guid: bcc55b9721f4b5843aab0efdd47dafa0, type: 3}
+  - {fileID: 940324320793270788, guid: b2cede5876a6790499ef40e292bdd293, type: 3}
+  - {fileID: 940324320793270788, guid: 063e7a1239ae1ec44a23277237990456, type: 3}
+--- !u!114 &-1601073158824409596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82f2caff0911f8a42a40152e1feb1066, type: 3}
+  m_Name: ChargeAttackInterruptedBossNode
+  m_EditorClassIdentifier: 
+  m_displayName: 
+  m_state: 0
+  m_started: 0
+  m_guid: 018c81de606a6ca4e89c9f302855d3e6
+  m_position: {x: 1025.4409, y: 1045.6}
+  totalTime: 1
+  m_interruptSound: {fileID: 940324320793270788, guid: ca0139b4ccbe93e4ca6e53289d51e0de, type: 3}
+--- !u!114 &-1586891533621429950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34f218e5ca6b36442bf9b586f421a8d1, type: 3}
+  m_Name: ValueVerifierDecoratorBossNode
+  m_EditorClassIdentifier: 
+  m_displayName: SwipeFromRightAttackCheck
+  m_state: 0
+  m_started: 0
+  m_guid: 2c9e3603e7c9ff54fb3de31b0de53060
+  m_position: {x: 384.8, y: 683.61115}
+  m_child: {fileID: 7961493488645257201}
+  thisAttackNumber: 3
+--- !u!114 &-1545097374950983148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34f218e5ca6b36442bf9b586f421a8d1, type: 3}
+  m_Name: ValueVerifierDecoratorBossNode
+  m_EditorClassIdentifier: 
+  m_displayName: SwipeFromLeftAttackCheck
+  m_state: 0
+  m_started: 0
+  m_guid: de352887ab3ffea409b516ccd20a66c9
+  m_position: {x: 384.79996, y: 469.19995}
+  m_child: {fileID: 1086170567154841904}
+  thisAttackNumber: 2
+--- !u!114 &-1195007336147386099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34f218e5ca6b36442bf9b586f421a8d1, type: 3}
+  m_Name: ValueVerifierDecoratorBossNode
+  m_EditorClassIdentifier: 
+  m_displayName: EnemySpawnAttackCheck
+  m_state: 0
+  m_started: 0
+  m_guid: 890c8ba542cb7ab4cb50882d71deca30
+  m_position: {x: 384.53247, y: 89.59997}
+  m_child: {fileID: 9131366448995370393}
+  thisAttackNumber: 0
+--- !u!114 &-249663778777661533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4ba68aeaeecda4a8294b76898ea4a9, type: 3}
+  m_Name: SwipeBossNode
+  m_EditorClassIdentifier: 
+  m_displayName: 
+  m_state: 0
+  m_started: 0
+  m_guid: 26ab03b8f14a7ac4ea231313e543b5bd
+  m_position: {x: 1724.8002, y: 1007.2}
+  leftSwipe: 0
+  totalTime: 1.5
+  vineSpawnZValue: -0.5
+  vineSpawnYValue: 0
+  m_swipeAttackSound: {fileID: 940324320793270788, guid: 39400c95e83841448a59676f369d88c0, type: 3}
+  m_angerSounds:
+  - {fileID: 940324320793270788, guid: 99febc0eae8d4bc4990d988ec61608c5, type: 3}
+  - {fileID: 940324320793270788, guid: 05a37e72ff84e36478c0ddd6f99d7a42, type: 3}
+  - {fileID: 940324320793270788, guid: e2592d2576a9c2e4d9f0489433bb6c0e, type: 3}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6c472abb86010f4ebf5ed161c277f67, type: 3}
+  m_Name: OnionPhase1Behaviour
+  m_EditorClassIdentifier: 
+  m_rootNode: {fileID: 6914490198606103748}
+  m_nodes:
+  - {fileID: 6914490198606103748}
+  - {fileID: 5026034393498012101}
+  - {fileID: 1252155432568026046}
+  - {fileID: -1195007336147386099}
+  - {fileID: 6864378399069423781}
+  - {fileID: -1545097374950983148}
+  - {fileID: -1586891533621429950}
+  - {fileID: 1012935136202555787}
+  - {fileID: 9131366448995370393}
+  - {fileID: 1086170567154841904}
+  - {fileID: 2328852546223094810}
+  - {fileID: -1632732558011948639}
+  - {fileID: 9083546011484010624}
+  - {fileID: 2244887991100638080}
+  - {fileID: 2678884589187631454}
+  - {fileID: 1190362581839638159}
+  - {fileID: 2626508512921138951}
+  - {fileID: -5367350674276284892}
+  - {fileID: -1863070522112135170}
+  - {fileID: 1650007071387948085}
+  - {fileID: -5749840288628361982}
+  - {fileID: -6442882337610306364}
+  - {fileID: 3435601786545318360}
+  - {fileID: -7517212161367890396}
+  - {fileID: -9189223699964131959}
+  - {fileID: -249663778777661533}
+  - {fileID: 7961493488645257201}
+  - {fileID: -2658921512539438600}
+  - {fileID: 426938910365825378}
+  - {fileID: -5457180018901079429}
+  - {fileID: -5995230721565963310}
+  - {fileID: 6300778645350447371}
+  - {fileID: -1601073158824409596}
+  - {fileID: 8560362813787422631}
+  - {fileID: -5884262097668633345}
+  - {fileID: 5372396149903855398}
+  - {fileID: -3783917739448522651}
+  m_treeState: 0
+  m_firstTimeRun: 1
+--- !u!114 &426938910365825378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 931e0570ec758c54aa98d8b3e688fb01, type: 3}
+  m_Name: PrepareAttackBossNode
+  m_EditorClassIdentifier: 
+  m_displayName: 
+  m_state: 0
+  m_started: 0
+  m_guid: 4361ce9332399d740b7fcce89fd25911
+  m_position: {x: 1065.6, y: 166.40002}
+  animToPlay: 6
+  totalTime: 1
+  m_prepareAttackSounds: []
+--- !u!114 &1012935136202555787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34f218e5ca6b36442bf9b586f421a8d1, type: 3}
+  m_Name: ValueVerifierDecoratorBossNode
+  m_EditorClassIdentifier: 
+  m_displayName: ChargeAttackCheck
+  m_state: 0
+  m_started: 0
+  m_guid: 23ec96970a21cac428b9ad82245a306b
+  m_position: {x: 400.00012, y: 968.7999}
+  m_child: {fileID: -5995230721565963310}
+  thisAttackNumber: 4
+--- !u!114 &1086170567154841904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50ada561eaeb7e84b81f5ff2dea25078, type: 3}
+  m_Name: SelectorNode
+  m_EditorClassIdentifier: 
+  m_displayName: 
+  m_state: 0
+  m_started: 0
+  m_guid: 9afc19e12e223f546b2cb103d940bc8a
+  m_position: {x: 928.7999, y: 475.19995}
+  m_children:
+  - {fileID: 2328852546223094810}
+  - {fileID: -1632732558011948639}
+--- !u!114 &1190362581839638159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4ba68aeaeecda4a8294b76898ea4a9, type: 3}
+  m_Name: SwipeBossNode
+  m_EditorClassIdentifier: 
+  m_displayName: 
+  m_state: 0
+  m_started: 0
+  m_guid: bc09743f010d4f34b86bfb7e67e65e52
+  m_position: {x: 1724.2067, y: 396.79996}
+  leftSwipe: 0
+  totalTime: 1.5
+  vineSpawnZValue: -0.5
+  vineSpawnYValue: 0
+  m_swipeAttackSound: {fileID: 940324320793270788, guid: 39400c95e83841448a59676f369d88c0, type: 3}
+  m_angerSounds:
+  - {fileID: 940324320793270788, guid: 99febc0eae8d4bc4990d988ec61608c5, type: 3}
+  - {fileID: 940324320793270788, guid: 05a37e72ff84e36478c0ddd6f99d7a42, type: 3}
+  - {fileID: 940324320793270788, guid: e2592d2576a9c2e4d9f0489433bb6c0e, type: 3}
+--- !u!114 &1252155432568026046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76ebfd941dce52743a4f1cac9bce37ae, type: 3}
+  m_Name: AttackChooserBossNode
+  m_EditorClassIdentifier: 
+  m_displayName: 
+  m_state: 0
+  m_started: 0
+  m_guid: fe922ba05f2f76643bf1779b674d8f01
+  m_position: {x: 337.25674, y: -45.60002}
+  m_range: 10
+  m_minimumRequired: 1
+--- !u!114 &1650007071387948085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75b3239d0e8f5cf4d89271fc4361f569, type: 3}
+  m_Name: LaughBossNode
+  m_EditorClassIdentifier: 
+  m_displayName: 
+  m_state: 0
+  m_started: 0
+  m_guid: fef1f9fe8327cc34ca5b4b27136b0c3d
+  m_position: {x: 1110.3998, y: 738.4}
+  totalTime: 2
+  m_laughSounds:
+  - {fileID: 940324320793270788, guid: bcc55b9721f4b5843aab0efdd47dafa0, type: 3}
+  - {fileID: 940324320793270788, guid: b2cede5876a6790499ef40e292bdd293, type: 3}
+  - {fileID: 940324320793270788, guid: 063e7a1239ae1ec44a23277237990456, type: 3}
+--- !u!114 &2244887991100638080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4ba68aeaeecda4a8294b76898ea4a9, type: 3}
+  m_Name: SwipeBossNode
+  m_EditorClassIdentifier: 
+  m_displayName: 
+  m_state: 0
+  m_started: 0
+  m_guid: 5033f66047444cd48a88bae7235bfb42
+  m_position: {x: 1724.2067, y: 243.19995}
+  leftSwipe: 1
+  totalTime: 1.5
+  vineSpawnZValue: -0.5
+  vineSpawnYValue: 0
+  m_swipeAttackSound: {fileID: 940324320793270788, guid: 39400c95e83841448a59676f369d88c0, type: 3}
+  m_angerSounds:
+  - {fileID: 940324320793270788, guid: 99febc0eae8d4bc4990d988ec61608c5, type: 3}
+  - {fileID: 940324320793270788, guid: 05a37e72ff84e36478c0ddd6f99d7a42, type: 3}
+  - {fileID: 940324320793270788, guid: e2592d2576a9c2e4d9f0489433bb6c0e, type: 3}
+--- !u!114 &2328852546223094810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07b4a77ddefc51a45aaedf511aa92e7a, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  m_displayName: 
+  m_state: 0
+  m_started: 0
+  m_guid: 9dfb9222745873c46889870e9e2b7aa3
+  m_position: {x: 1110.3998, y: 436.79993}
+  m_children:
+  - {fileID: 9083546011484010624}
+  - {fileID: 2244887991100638080}
+  - {fileID: 2678884589187631454}
+  - {fileID: 1190362581839638159}
+  - {fileID: 2626508512921138951}
+  - {fileID: -5367350674276284892}
+--- !u!114 &2626508512921138951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 931e0570ec758c54aa98d8b3e688fb01, type: 3}
+  m_Name: PrepareAttackBossNode
+  m_EditorClassIdentifier: 
+  m_displayName: 
+  m_state: 0
+  m_started: 0
+  m_guid: bb4a7bfabea6d594e82baafbfc5df68d
+  m_position: {x: 1724.2067, y: 475.19995}
+  animToPlay: 2
+  totalTime: 0.5
+  m_prepareAttackSounds:
+  - {fileID: 940324320793270788, guid: adb0463334751fd4783bb17086f853c7, type: 3}
+--- !u!114 &2678884589187631454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 931e0570ec758c54aa98d8b3e688fb01, type: 3}
+  m_Name: PrepareAttackBossNode
+  m_EditorClassIdentifier: 
+  m_displayName: 
+  m_state: 0
+  m_started: 0
+  m_guid: 82dd9a8aae709514b928f045b7e0419b
+  m_position: {x: 1724.2067, y: 319.99994}
+  animToPlay: 3
+  totalTime: 0.5
+  m_prepareAttackSounds:
+  - {fileID: 940324320793270788, guid: adb0463334751fd4783bb17086f853c7, type: 3}
+--- !u!114 &3435601786545318360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 931e0570ec758c54aa98d8b3e688fb01, type: 3}
+  m_Name: PrepareAttackBossNode
+  m_EditorClassIdentifier: 
+  m_displayName: 
+  m_state: 0
+  m_started: 0
+  m_guid: 3abd99306b4c0c343b60f89621082125
+  m_position: {x: 1725.0067, y: 776.7999}
+  animToPlay: 2
+  totalTime: 0.5
+  m_prepareAttackSounds:
+  - {fileID: 940324320793270788, guid: adb0463334751fd4783bb17086f853c7, type: 3}
+--- !u!114 &5026034393498012101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50ada561eaeb7e84b81f5ff2dea25078, type: 3}
+  m_Name: SelectorNode
+  m_EditorClassIdentifier: 
+  m_displayName: AttackDecider
+  m_state: 0
+  m_started: 0
+  m_guid: 7b4e06ff72ee1724fb65093f9d2166a7
+  m_position: {x: 73, y: 128}
+  m_children:
+  - {fileID: 1252155432568026046}
+  - {fileID: -1195007336147386099}
+  - {fileID: 6864378399069423781}
+  - {fileID: -1545097374950983148}
+  - {fileID: -1586891533621429950}
+  - {fileID: 1012935136202555787}
+--- !u!114 &5372396149903855398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07b4a77ddefc51a45aaedf511aa92e7a, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  m_displayName: 
+  m_state: 0
+  m_started: 0
+  m_guid: 2c6a99e430dcd714ea77fef9f8f20d1a
+  m_position: {x: -137, y: 76.8}
+  m_children:
+  - {fileID: -3783917739448522651}
+  - {fileID: 5026034393498012101}
+--- !u!114 &6300778645350447371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07b4a77ddefc51a45aaedf511aa92e7a, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  m_displayName: 
+  m_state: 0
+  m_started: 0
+  m_guid: fe16d5de18f21b24395d1746e659a903
+  m_position: {x: 1025.5999, y: 968.79987}
+  m_children:
+  - {fileID: -5884262097668633345}
+  - {fileID: 8560362813787422631}
+--- !u!114 &6864378399069423781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34f218e5ca6b36442bf9b586f421a8d1, type: 3}
+  m_Name: ValueVerifierDecoratorBossNode
+  m_EditorClassIdentifier: 
+  m_displayName: CenterAttackCheck
+  m_state: 0
+  m_started: 0
+  m_guid: 58475f315c846ee4bb52e724b7ecc190
+  m_position: {x: 384.79993, y: 242.80005}
+  m_child: {fileID: -2658921512539438600}
+  thisAttackNumber: 1
+--- !u!114 &6914490198606103748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 495248652cadba5498b13fe0ef2a5513, type: 3}
+  m_Name: RootNode
+  m_EditorClassIdentifier: 
+  m_displayName: 
+  m_state: 0
+  m_started: 0
+  m_guid: 35b7406f5a1e741439792800a4c7174d
+  m_position: {x: -343.35196, y: 76.8}
+  m_child: {fileID: 5372396149903855398}
+--- !u!114 &7961493488645257201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50ada561eaeb7e84b81f5ff2dea25078, type: 3}
+  m_Name: SelectorNode
+  m_EditorClassIdentifier: 
+  m_displayName: 
+  m_state: 0
+  m_started: 0
+  m_guid: 990f1c6906629564a9feb7301d236116
+  m_position: {x: 928.8002, y: 684}
+  m_children:
+  - {fileID: -1863070522112135170}
+  - {fileID: 1650007071387948085}
+--- !u!114 &8560362813787422631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ecf46b6672fc5c42b3a1b9085b8c9ee, type: 3}
+  m_Name: ChargeAttackLaunchBossNode
+  m_EditorClassIdentifier: 
+  m_displayName: 
+  m_state: 0
+  m_started: 0
+  m_guid: 3ee96ca873b41cc468da65031bbfe678
+  m_position: {x: 1305.6001, y: 1007.1998}
+  totalTime: 2
+  rootSpawnZValue: -0.5
+  rootSpawnYValue: 0
+  m_chargeAttackSound: {fileID: 940324320793270788, guid: ff40f598363345747bcf748fed34c0d6, type: 3}
+--- !u!114 &9083546011484010624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 931e0570ec758c54aa98d8b3e688fb01, type: 3}
+  m_Name: PrepareAttackBossNode
+  m_EditorClassIdentifier: 
+  m_displayName: 
+  m_state: 0
+  m_started: 0
+  m_guid: b35648c6ae0d8f94a8e62fa44fb96e26
+  m_position: {x: 1724.2067, y: 166.39995}
+  animToPlay: 2
+  totalTime: 1
+  m_prepareAttackSounds:
+  - {fileID: 940324320793270788, guid: adb0463334751fd4783bb17086f853c7, type: 3}
+--- !u!114 &9131366448995370393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d33710a393af434381a2808b9803686, type: 3}
+  m_Name: SpawnAttackBossNode
+  m_EditorClassIdentifier: 
+  m_displayName: 
+  m_state: 0
+  m_started: 0
+  m_guid: 787238ee69316e148a7c3bc1ca8bd297
+  m_position: {x: 859.1999, y: 89.600075}
+  totalTime: 3
+  enemiesToSpawn: 4
+  enemiesSpawnZValue: -0.5
+  spawnHorizontalWallOffsetValue: 1
+  m_spawnAttackSound: {fileID: 940324320793270788, guid: cfee2dfb1da82e24897b4e1f3c53dec1, type: 3}
+  m_individualSpawnSound: {fileID: 940324320793270788, guid: 547d3e1e61641624fad32c2f0950b647, type: 3}
